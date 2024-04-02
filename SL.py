@@ -36,9 +36,6 @@ with col1:
         "Choose meal type",
         ["Breakfast", "Morning Snack", "Lunch", "Afternoon Snack","Dinner", "Evening Snack", "Other"]
     )
-    meal=meal.replace('Morning Snack',"Snack")
-    meal=meal.replace('Afternoon Snack',"Snack")
-    meal=meal.replace('Evening Snack',"Snack")
 
 with col11:
     st.write("You selected:",meal)
