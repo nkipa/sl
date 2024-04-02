@@ -36,6 +36,9 @@ with col1:
         "Choose meal type",
         ["Breakfast", "Morning Snack", "Lunch", "Afternoon Snack","Dinner", "Evening Snack", "Other"]
     )
+    meal=meal.replace('Morning Snack',"Snack")
+    meal=meal.replace('Afternoon Snack',"Snack")
+    meal=meal.replace('Evening Snack',"Snack")
 
 with col11:
     st.write("You selected:",meal)
@@ -44,11 +47,6 @@ with col2:
         "Location of the meal",
         ['Restaurant', 'Supermarket','Home','Other']
 )
-    R = st.checkbox('Restaurant')
-    M = st.checkbox('Super Market')
-    H = st.checkbox('Home')
-    O = st.checkbox('Other')
-
 with col12:    
     st.write("Your location is:", location)
 with col3:
@@ -106,6 +104,12 @@ with col1b:
         st.metric(label="Fiber (gr.)", value=format(sol.Total.Fiber,'.2f'))
     with cola1:
         st.metric(label="Cholesterol (mg.)", value=format(sol.Total.Cholesterol,'.2f'))
+
+
+
+
+
+     
 
 
 
