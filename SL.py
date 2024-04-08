@@ -16,7 +16,7 @@ pd.set_option('display.width', 1000)
 
 
 # Load and prepare the DataFrame
-df = pd.read_csv('./nutra.csv', on_bad_lines='skip', low_memory=False)
+df = pd.read_csv('nutra.csv', on_bad_lines='skip', low_memory=False)
 df.index = range(1, len(df) + 1)
 df.columns = df.columns.str.replace('_', ' ').str.capitalize()
 df.rename(columns={"R": "Restaurant", "M": "Supermarket", "H": "Home", 
